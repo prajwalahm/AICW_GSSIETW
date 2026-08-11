@@ -1,0 +1,1222 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "04fe880b-2e7f-4d2a-8f1e-6e914226d610",
+      "cell_type": "markdown",
+      "source": "<h1>DAY 2-AICW PROGRAM</h1>",
+      "metadata": {}
+    },
+    {
+      "id": "10e08651-b393-41bd-b660-409cb3f9b9d0",
+      "cell_type": "markdown",
+      "source": "### Python basics",
+      "metadata": {}
+    },
+    {
+      "id": "e5311f8d-9cbd-4cf7-96ec-5399b3b03988",
+      "cell_type": "markdown",
+      "source": "#### Welcome to AICW",
+      "metadata": {}
+    },
+    {
+      "id": "ff3b3f3e-2e39-4cab-b7f8-a86fce4b456f",
+      "cell_type": "code",
+      "source": "# creat a variable 'name' and assign your name\nname = 'Prajwala'",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 2
+    },
+    {
+      "id": "ad371c03-4d32-4978-805b-b1da78de5625",
+      "cell_type": "code",
+      "source": "print(name)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Prajwala\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "1896471e-bd1e-4e75-9284-33298803e80a",
+      "cell_type": "code",
+      "source": "name",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 4,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'Prajwala'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "id": "d53ab661-ec69-4dc5-8f29-04a09e0d8dd1",
+      "cell_type": "code",
+      "source": "type(name)\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 5,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "str"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 5
+    },
+    {
+      "id": "ed996e8f-4911-41d0-9366-bdbce9848a13",
+      "cell_type": "code",
+      "source": "len(name)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 7,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "8"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 7
+    },
+    {
+      "id": "bece10a5-3d4a-4b9e-be7e-14ac8fab47e1",
+      "cell_type": "code",
+      "source": "# creating age vaiable and assign a value\nage = 20\nprint(age)\nprint(type(age))\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "20\n<class 'int'>\n"
+        }
+      ],
+      "execution_count": 8
+    },
+    {
+      "id": "39949ddc-00dc-4b11-9bec-98f3e4601bf3",
+      "cell_type": "code",
+      "source": "lst = ['AICW', 'GSSSIETW',21,21,'metagalli',1.5]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 9
+    },
+    {
+      "id": "c73fe0cf-fcf2-4d7d-9ffc-5f734aa7da85",
+      "cell_type": "code",
+      "source": "type(lst)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 11,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "list"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 11
+    },
+    {
+      "id": "a8ecad1d-8124-421b-9ee9-151da8d829fd",
+      "cell_type": "code",
+      "source": "dir(list)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 12,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['__add__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__delitem__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getstate__',\n '__gt__',\n '__hash__',\n '__iadd__',\n '__imul__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__reversed__',\n '__rmul__',\n '__setattr__',\n '__setitem__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'append',\n 'clear',\n 'copy',\n 'count',\n 'extend',\n 'index',\n 'insert',\n 'pop',\n 'remove',\n 'reverse',\n 'sort']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 12
+    },
+    {
+      "id": "2dee8114-cc23-4185-a299-c1c554b0dd61",
+      "cell_type": "code",
+      "source": "# list - [] - mutuable - any dts\n# Append\nlst.append('KRS Road')\nlst",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 13,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['AICW', 'GSSSIETW', 21, 21, 'metagalli', 1.5, 'KRS Road']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 13
+    },
+    {
+      "id": "7cd1e775-5050-466a-a5a3-6592aa1da45d",
+      "cell_type": "code",
+      "source": "lst1 = lst.copy()\nlst1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 14,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['AICW', 'GSSSIETW', 21, 21, 'metagalli', 1.5, 'KRS Road']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 14
+    },
+    {
+      "id": "46d5d0bd-8494-4bf9-b9d2-63c6a6129753",
+      "cell_type": "code",
+      "source": "# count function\nlst.count(21)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 15,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "2"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 15
+    },
+    {
+      "id": "5665525e-349e-48ab-baea-f1c8a3ade4f0",
+      "cell_type": "code",
+      "source": "# extent func\nlst2 = ['mango','kivi']",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 16
+    },
+    {
+      "id": "582573fa-2168-4730-93b3-fc078564c24f",
+      "cell_type": "code",
+      "source": "lst.extend(lst2)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 17
+    },
+    {
+      "id": "d2b315d3-29b0-4dbc-b28c-f0c618ed3ca3",
+      "cell_type": "code",
+      "source": "lst",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 19,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['AICW', 'GSSSIETW', 21, 21, 'metagalli', 1.5, 'KRS Road', 'mango', 'kivi']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 19
+    },
+    {
+      "id": "8514a823-39e3-4e96-a06c-b046dc7621f1",
+      "cell_type": "code",
+      "source": "#  index \nlst1.index(21)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 20,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "2"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 20
+    },
+    {
+      "id": "133ff56e-bf03-4fdf-836f-8385cc491c0c",
+      "cell_type": "code",
+      "source": "lst1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 21,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['AICW', 'GSSSIETW', 21, 21, 'metagalli', 1.5, 'KRS Road']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 21
+    },
+    {
+      "id": "de829d0c-86c0-47c2-98db-bce47292effd",
+      "cell_type": "code",
+      "source": "# insert\nlst1.insert(2,2004)\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 22
+    },
+    {
+      "id": "1c5998fc-ef02-43ab-b8e3-3d37880ca613",
+      "cell_type": "code",
+      "source": "lst1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 23,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['AICW', 'GSSSIETW', 2004, 21, 21, 'metagalli', 1.5, 'KRS Road']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 23
+    },
+    {
+      "id": "022bc69c-f140-4a09-b507-fdbf3a790e93",
+      "cell_type": "code",
+      "source": "# pop\nlst1.pop(-2)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 24,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "1.5"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 24
+    },
+    {
+      "id": "a7d262d9-671e-48a9-9b36-de560799d466",
+      "cell_type": "code",
+      "source": "# remove\nlst1.remove(21)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 25
+    },
+    {
+      "id": "dbbac03d-a767-4542-9009-b0254627add0",
+      "cell_type": "code",
+      "source": "lst1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 26,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['AICW', 'GSSSIETW', 2004, 21, 'metagalli', 'KRS Road']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 26
+    },
+    {
+      "id": "554233e4-a57d-4525-a0cb-f7c6bf3051c2",
+      "cell_type": "code",
+      "source": "# reverse\nlst1.reverse()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 27
+    },
+    {
+      "id": "5f6b6bcc-626e-41bd-ba7c-5e5a9ede7786",
+      "cell_type": "code",
+      "source": "lst1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 29,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['KRS Road', 'metagalli', 21, 2004, 'GSSSIETW', 'AICW']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 29
+    },
+    {
+      "id": "23353da5-00b0-4b20-8699-11780a355b0c",
+      "cell_type": "code",
+      "source": "x = 'SMR'\nx[::-1]",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 30,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'RMS'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 30
+    },
+    {
+      "id": "b73bc885-3668-43e8-9dff-8737fbf755bf",
+      "cell_type": "code",
+      "source": "# clear\nlst1.clear()\nlst1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 31,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[]"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 31
+    },
+    {
+      "id": "428b5e9a-b114-48c7-8d1a-194224996f40",
+      "cell_type": "code",
+      "source": "# tuple \ntup=(\"Edunate Foundation\",2015)\ntup",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 32,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "('Edunate Foundation', 2015)"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 32
+    },
+    {
+      "id": "1046e7e2-499a-4882-8977-2fe1746d3b0d",
+      "cell_type": "code",
+      "source": "type(tup)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 33,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "tuple"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 33
+    },
+    {
+      "id": "d0b1c55d-f4c6-4536-8d0a-00063e0d0f52",
+      "cell_type": "code",
+      "source": "dir(tup)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 34,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['__add__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getnewargs__',\n '__getstate__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__mul__',\n '__ne__',\n '__new__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__rmul__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'count',\n 'index']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 34
+    },
+    {
+      "id": "385f7d4b-0dcc-4f58-a6ae-aa441a3ff8e8",
+      "cell_type": "code",
+      "source": "# count\ntup.count(2015)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 35,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "1"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 35
+    },
+    {
+      "id": "85b1d1fe-9b04-4d73-8aac-7d9debb1ba42",
+      "cell_type": "code",
+      "source": "# count tup.count(10)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 36
+    },
+    {
+      "id": "21ada7d8-7958-46ca-a902-ec8676f0c4ac",
+      "cell_type": "code",
+      "source": "tup.index(2015)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 37,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "1"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 37
+    },
+    {
+      "id": "db2756de-7359-4dec-beef-1282daf922a3",
+      "cell_type": "code",
+      "source": "# set - {} - unique\ns1 = {'name','age'}",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 38
+    },
+    {
+      "id": "5aa43102-839e-435a-b5f0-ba7b5ec63f04",
+      "cell_type": "code",
+      "source": "type(s1)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 39,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "set"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 39
+    },
+    {
+      "id": "ae76ffa8-ca8a-4e41-8896-6c2b09610f4c",
+      "cell_type": "code",
+      "source": "{'age','name'}",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 40,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "{'age', 'name'}"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 40
+    },
+    {
+      "id": "a113c7a5-7615-4a67-ae6b-eee4af81a58e",
+      "cell_type": "code",
+      "source": "# no repeated values\ns2 = {1,2,3,3,43,43}\ns2",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 41,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "{1, 2, 3, 43}"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 41
+    },
+    {
+      "id": "9b2ddcdc-db0d-471d-b211-6abb4a6bab8e",
+      "cell_type": "code",
+      "source": "dir(set)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 42,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['__and__',\n '__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getstate__',\n '__gt__',\n '__hash__',\n '__iand__',\n '__init__',\n '__init_subclass__',\n '__ior__',\n '__isub__',\n '__iter__',\n '__ixor__',\n '__le__',\n '__len__',\n '__lt__',\n '__ne__',\n '__new__',\n '__or__',\n '__rand__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__ror__',\n '__rsub__',\n '__rxor__',\n '__setattr__',\n '__sizeof__',\n '__str__',\n '__sub__',\n '__subclasshook__',\n '__xor__',\n 'add',\n 'clear',\n 'copy',\n 'difference',\n 'difference_update',\n 'discard',\n 'intersection',\n 'intersection_update',\n 'isdisjoint',\n 'issubset',\n 'issuperset',\n 'pop',\n 'remove',\n 'symmetric_difference',\n 'symmetric_difference_update',\n 'union',\n 'update']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 42
+    },
+    {
+      "id": "356945c9-0e5d-4025-90d4-c524fcb2d9b6",
+      "cell_type": "code",
+      "source": "print(s1)\nprint(s2)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "{'age', 'name'}\n{1, 2, 3, 43}\n"
+        }
+      ],
+      "execution_count": 43
+    },
+    {
+      "id": "2d979b56-7ee5-4e12-90a3-4294996dc955",
+      "cell_type": "code",
+      "source": "s1.union(s2)\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 44,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "{1, 2, 3, 43, 'age', 'name'}"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 44
+    },
+    {
+      "id": "57591279-5560-4d6a-9068-c897a97145e4",
+      "cell_type": "code",
+      "source": "s1.intersection(s2)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 45,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "set()"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 45
+    },
+    {
+      "id": "23bc7567-c77a-4d44-8aba-2f13203ebbec",
+      "cell_type": "code",
+      "source": "s3 = {90,55,2004,2015}\ns2.intersection(s3)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 46,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "set()"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 46
+    },
+    {
+      "id": "3cd2552b-f09e-4fe3-8e12-6501d1be2e99",
+      "cell_type": "code",
+      "source": "# Dictionary - {} - K:V pair - Keys unique - json\ndc = {'Name':'RMS',\n     'Age':20,\n     'place':'Mysore'}\ndc",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 47,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "{'Name': 'RMS', 'Age': 20, 'place': 'Mysore'}"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 47
+    },
+    {
+      "id": "3214a6ec-b8d2-4255-9179-ae1dfbe87e51",
+      "cell_type": "code",
+      "source": "dir(dict)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 48,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['__class__',\n '__class_getitem__',\n '__contains__',\n '__delattr__',\n '__delitem__',\n '__dir__',\n '__doc__',\n '__eq__',\n '__format__',\n '__ge__',\n '__getattribute__',\n '__getitem__',\n '__getstate__',\n '__gt__',\n '__hash__',\n '__init__',\n '__init_subclass__',\n '__ior__',\n '__iter__',\n '__le__',\n '__len__',\n '__lt__',\n '__ne__',\n '__new__',\n '__or__',\n '__reduce__',\n '__reduce_ex__',\n '__repr__',\n '__reversed__',\n '__ror__',\n '__setattr__',\n '__setitem__',\n '__sizeof__',\n '__str__',\n '__subclasshook__',\n 'clear',\n 'copy',\n 'fromkeys',\n 'get',\n 'items',\n 'keys',\n 'pop',\n 'popitem',\n 'setdefault',\n 'update',\n 'values']"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 48
+    },
+    {
+      "id": "b5e794ca-a695-444b-9b12-b55158b95be6",
+      "cell_type": "code",
+      "source": "dc.keys()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 49,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "dict_keys(['Name', 'Age', 'place'])"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 49
+    },
+    {
+      "id": "1c06ca4c-27af-4582-8030-54745bb2a0c1",
+      "cell_type": "code",
+      "source": "dc.values()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 51,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "dict_values(['RMS', 20, 'Mysore'])"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 51
+    },
+    {
+      "id": "663dc741-7b4c-46bc-b52a-baeee36d2194",
+      "cell_type": "code",
+      "source": "for i in range(1,10):\n    print(i)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "1\n2\n3\n4\n5\n6\n7\n8\n9\n"
+        }
+      ],
+      "execution_count": 52
+    },
+    {
+      "id": "7f213270-3945-45ec-87d4-4aefa84c0dd8",
+      "cell_type": "code",
+      "source": "for i in range(0,11,2):\n    print(i)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "0\n2\n4\n6\n8\n10\n"
+        }
+      ],
+      "execution_count": 53
+    },
+    {
+      "id": "c07d2366-4ded-4674-a593-c34254850e88",
+      "cell_type": "code",
+      "source": "for i in range(1,12,2):\n    print(i)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "1\n3\n5\n7\n9\n11\n"
+        }
+      ],
+      "execution_count": 54
+    },
+    {
+      "id": "2f223678-bb22-434b-8cb7-44d27cb5533f",
+      "cell_type": "code",
+      "source": "def add(x,y):\n    return x + y",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 55
+    },
+    {
+      "id": "9ddf4120-7d56-4dda-b04f-aac16627760b",
+      "cell_type": "code",
+      "source": "add(3,2)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 56,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "5"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 56
+    },
+    {
+      "id": "97618bb5-9d0a-458c-bf1c-3c418563cc0b",
+      "cell_type": "code",
+      "source": "def add(x,y,z):\n    return x + y + z",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 60
+    },
+    {
+      "id": "2bdd1913-ebe6-4144-9970-c50c98673d82",
+      "cell_type": "code",
+      "source": "add(3,5,8)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'TypeError'>",
+          "evalue": "add() takes 2 positional arguments but 3 were given",
+          "traceback": [
+            "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+            "\u001b[31mTypeError\u001b[39m                                 Traceback (most recent call last)",
+            "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[58]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[43madd\u001b[49m\u001b[43m(\u001b[49m\u001b[32;43m3\u001b[39;49m\u001b[43m,\u001b[49m\u001b[32;43m5\u001b[39;49m\u001b[43m,\u001b[49m\u001b[32;43m8\u001b[39;49m\u001b[43m)\u001b[49m\n",
+            "\u001b[31mTypeError\u001b[39m: add() takes 2 positional arguments but 3 were given"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 58
+    },
+    {
+      "id": "46ba40ea-efdd-46b9-b553-c10172e7ba74",
+      "cell_type": "code",
+      "source": "def add(x,y,z):\n    return x + y + z",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 61
+    },
+    {
+      "id": "cacf0564-e45e-41fc-9898-ac921337b548",
+      "cell_type": "code",
+      "source": "add(3,4,5)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 62,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "12"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 62
+    },
+    {
+      "id": "0494ea36-2dd1-41f6-9bfe-20c8b140550d",
+      "cell_type": "code",
+      "source": "x = 1\nwhile True:\n    if x % 5 == 0:\n        break\n    print(x)\n    x + = 1",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'SyntaxError'>",
+          "evalue": "invalid syntax (<ipython-input-68-69216f0e0c59>, line 6)",
+          "traceback": [
+            "  \u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[68]\u001b[39m\u001b[32m, line 6\u001b[39m\n\u001b[31m    \u001b[39m\u001b[31mx + = 1\u001b[39m\n        ^\n\u001b[31mSyntaxError\u001b[39m\u001b[31m:\u001b[39m invalid syntax\n"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 68
+    },
+    {
+      "id": "7f5b471b-68e7-4305-b5c9-9f74ba97fcc4",
+      "cell_type": "code",
+      "source": "class student:\n    pass",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 69
+    },
+    {
+      "id": "8a2b634e-75b2-4a8c-8b23-7338edfb884f",
+      "cell_type": "code",
+      "source": "i = student()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 70
+    },
+    {
+      "id": "2b95d541-2679-4740-bae3-451c4bb8c1be",
+      "cell_type": "code",
+      "source": "i",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 71,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "<__main__.student at 0x2ec6868>"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 71
+    },
+    {
+      "id": "e830ad27-deb9-4700-bc15-ce59f7603da6",
+      "cell_type": "code",
+      "source": "class student:\n    def __init__(self,name,place):\n       self.name = name\n       self.place = place\n\n    def show(self):\n        return f'The name is {self.name} and you are from {self.place}'\n\np1 = student('ABC','mysore')\np1.show()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 78,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'The name is ABC and you are from mysore'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 78
+    },
+    {
+      "id": "ac2930ca-4128-4512-af9f-4e6d0102c7c5",
+      "cell_type": "markdown",
+      "source": "p1.name",
+      "metadata": {}
+    },
+    {
+      "id": "17b950a7-7f62-4dbd-93b2-1c04c17f136a",
+      "cell_type": "code",
+      "source": "|",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'SyntaxError'>",
+          "evalue": "invalid syntax (<ipython-input-79-4b37ef281455>, line 1)",
+          "traceback": [
+            "  \u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[79]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[31m    \u001b[39m\u001b[31m|\u001b[39m\n    ^\n\u001b[31mSyntaxError\u001b[39m\u001b[31m:\u001b[39m invalid syntax\n"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 79
+    },
+    {
+      "id": "029d7135-18c8-48ea-aa2f-b61bb1fa430c",
+      "cell_type": "code",
+      "source": "p1.place",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 80,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'mysore'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 80
+    },
+    {
+      "id": "9a841dc3-f011-42ff-a2b7-a4986bce0ed2",
+      "cell_type": "code",
+      "source": "p1.name",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 81,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'ABC'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 81
+    },
+    {
+      "id": "d18eac20-c847-42a9-b17b-fe2432be3cff",
+      "cell_type": "code",
+      "source": "class student:\n    def __init__(std,usn,place):\n        std.usn = usn\n        std.name = name\n        std.place = place\n    def show(std): # instant method\n        print(f'USN of {std.usn} having the name {std.name} is from {std.place}')\n    def update(std):\n        std.usn = usn\n        std.place = place",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 85
+    },
+    {
+      "id": "3d7f7d35-6f17-45e8-ad41-3b24f17f7204",
+      "cell_type": "code",
+      "source": "stud = student(130,'RMS','MYS')\nstud.name",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "ename": "<class 'TypeError'>",
+          "evalue": "student.__init__() takes 3 positional arguments but 4 were given",
+          "traceback": [
+            "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+            "\u001b[31mTypeError\u001b[39m                                 Traceback (most recent call last)",
+            "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[83]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m stud = \u001b[43mstudent\u001b[49m\u001b[43m(\u001b[49m\u001b[32;43m130\u001b[39;49m\u001b[43m,\u001b[49m\u001b[33;43m'\u001b[39;49m\u001b[33;43mRMS\u001b[39;49m\u001b[33;43m'\u001b[39;49m\u001b[43m,\u001b[49m\u001b[33;43m'\u001b[39;49m\u001b[33;43mMYS\u001b[39;49m\u001b[33;43m'\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[32m      2\u001b[39m stud.name\n",
+            "\u001b[31mTypeError\u001b[39m: student.__init__() takes 3 positional arguments but 4 were given"
+          ],
+          "output_type": "error"
+        }
+      ],
+      "execution_count": 83
+    },
+    {
+      "id": "635f920e-fb65-4873-8f50-3822ca157633",
+      "cell_type": "code",
+      "source": "class Student:\n    def __init__(std,usn,name,place):\n        std.usn = usn\n        std.name = name\n        std.place = place\n    def show(std): # instant method\n        print(f'USN of {std.usn} having the name {std.name} is from {std.place}')\n    def update(std, usn, place):\n        std.usn = usn\n        std.place = place",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 96
+    },
+    {
+      "id": "c9d0dcb5-016c-4cab-a72d-f9e0222ea778",
+      "cell_type": "code",
+      "source": "stud = Student(130, 'RMS' ,'MYS')\nstud.name",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 97,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'RMS'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 97
+    },
+    {
+      "id": "e53e0d1b-bc90-487d-a3eb-aca58ac65f24",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "11da428c-fd3e-4690-98ec-0b42b31e1a3e",
+      "cell_type": "code",
+      "source": "class Student:\n    def __init__(std,usn,name,place):\n        std.usn = usn\n        std.name = name\n        std.place = place\n    def show(std): # instant method\n        print(f'USN of {std.usn} having the name {std.name} is from {std.place}')\n    def update(std, usn, place):\n        std.usn = usn\n        std.place = place",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 92
+    },
+    {
+      "id": "cf45d881-544b-4197-a037-8cf947bb2db6",
+      "cell_type": "code",
+      "source": "stud = Student(130, 'RMS' ,'MYS')\nstud.name",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "execution_count": 93,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'RMS'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 93
+    },
+    {
+      "id": "419bf698-36e1-4ad5-8e3c-c1e9e50b4b89",
+      "cell_type": "code",
+      "source": "stud.update(120,'blore')",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": 99
+    },
+    {
+      "id": "dde2801f-b5a5-4988-8aed-6be4bddd573c",
+      "cell_type": "code",
+      "source": "stud.show()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "USN of 120 having the name RMS is from blore\n"
+        }
+      ],
+      "execution_count": 100
+    },
+    {
+      "id": "b720dd72-9f0a-4ebb-95d4-4106876e408b",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
